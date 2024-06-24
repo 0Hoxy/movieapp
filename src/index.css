@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url(./assets/fonts/GmarketSansTTFMedium.ttf);
+}
+:root {
+  --body_backgroud: #101010;
+  --body_color: #fff;
+  --heading_color: #ffe400;
+}
+
+[data-theme='light'] {
+  --body_backgroud: #fff;
+  --body_color: #000;
+  --heading_color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body_backgroud);
+  color: var(--body_color);
+  font-family: 'GmarketSansMedium';
+}
+
+.align_center {
+  display: flex;
+  align-items: center;
+}
+html {
+  scroll-behavior: smooth;
+}
